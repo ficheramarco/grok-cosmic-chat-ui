@@ -199,13 +199,13 @@ export default function ChatPage() {
           <>
             <div className="absolute -top-32 -left-32 w-96 h-96 bg-purple-700/40 blur-3xl rounded-full" />
             <div className="absolute top-10 right-0 w-80 h-80 bg-indigo-600/25 blur-3xl rounded-full" />
-            <div className="absolute bottom-40 left-1/3 w-md h-112 bg-pink-600/25 blur-3xl rounded-full" />
+            <div className="absolute bottom-[-10rem] left-1/3 w-[28rem] h-[28rem] bg-pink-600/25 blur-3xl rounded-full" />
           </>
         ) : (
           <>
             <div className="absolute -top-20 -left-20 w-96 h-96 bg-amber-500/40 blur-3xl rounded-full" />
             <div className="absolute top-24 right-0 w-80 h-80 bg-sky-500/30 blur-3xl rounded-full" />
-            <div className="absolute bottom-32 left-1/4 w-104 h-104 bg-red-500/25 blur-3xl rounded-full" />
+            <div className="absolute bottom-[-8rem] left-1/4 w-[26rem] h-[26rem] bg-red-500/25 blur-3xl rounded-full" />
           </>
         )}
       </div>
@@ -213,7 +213,7 @@ export default function ChatPage() {
       {/* SIDEBAR */}
       <aside className="relative z-10 hidden md:flex flex-col w-64 border-r border-white/10 bg-black/40 backdrop-blur-xl">
         <div className="px-4 pt-4 pb-3 border-b border-white/10 flex items-center gap-3">
-          <div className="w-8 h-8 rounded-xl bg-linear-to-br from-indigo-400 via-purple-500 to-pink-500 flex items-center justify-center text-xs font-bold shadow-lg">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 flex items-center justify-center text-xs font-bold shadow-lg">
             GX
           </div>
           <div>
@@ -445,7 +445,7 @@ export default function ChatPage() {
             <button
               onClick={sendMessage}
               disabled={!input.trim() || loading}
-              className="px-4 md:px-5 py-2.5 rounded-xl text-sm font-medium bg-linear-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 disabled:from-slate-700 disabled:to-slate-700 disabled:text-slate-400 shadow-lg shadow-purple-500/40 active:scale-95 transition-transform"
+              className="px-4 md:px-5 py-2.5 rounded-xl text-sm font-medium bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 disabled:from-slate-700 disabled:to-slate-700 disabled:text-slate-400 shadow-lg shadow-purple-500/40 active:scale-95 transition-transform"
             >
               Send
             </button>
